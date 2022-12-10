@@ -240,6 +240,12 @@ p {
   margin-left: 30px;
 }
 
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-block {
   padding-top: 30px;
   padding-bottom: 16px;
@@ -296,10 +302,10 @@ p {
   border-radius: 50%;
   fill: var(--color-social-icons);
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--color-selected);
   fill: var(--color-primary-title);
-  /* border-radius: 50%; */
 }
 
 .clients-list {
@@ -316,7 +322,8 @@ p {
   border-radius: 4px;
   fill: var(--color-social-icons);
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--color-selected);
   fill: var(--color-selected);
 }
@@ -333,6 +340,8 @@ p {
 .button:focus {
   background-color: var(--color-selected);
   color: var(--color-primary-title);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-font {
@@ -359,7 +368,7 @@ p {
   flex-wrap: wrap;
 }
 .examples .item {
-  margin-right: 30px;
+  margin-right: 26px;
   margin-bottom: 30px;
 }
 .examples .item:nth-child(3n) {
@@ -393,6 +402,13 @@ p {
 .example-link {
   text-decoration: none;
   display: inline-grid;
+  border: 1px solid var(--color-primary-title);
+}
+.example-link:hover,
+.example-link:focus {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .footer {
@@ -475,7 +491,8 @@ p {
   border-radius: 50%;
   fill: var(--color-primary-title);
 }
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--color-selected);
 }
 
