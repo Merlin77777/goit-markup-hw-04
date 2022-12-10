@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML+CSS ДЗ №3</title>
+    <title>HTML+CSS ДЗ №4</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,10 +40,20 @@
         </nav>
         <ul class="top-cont list">
           <li class="item">
-            <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contact-link" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16" height="12">
+                <use xlink:href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="item">
-            <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contact-link" href="tel:+380961111111">
+              <svg class="contact-icon" width="10" height="16">
+                <use xlink:href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -204,15 +214,52 @@
     </main>
     <!-- Підвал -->
     <footer class="footer">
-      <div class="container foot-container">
-        <a class="footer-logo" href="./index.html">
-          <span class="logo-text-color">Web</span>Studio
-        </a>
-        <address class="addr">
-          <a class="footer-link footer-addr" href="">м. Київ, пр-т Лесі Українки, 26</a>
-          <a class="footer-link footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="footer-link footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+      <div class="container fc">
+        <div class="foot-container">
+          <a class="footer-logo" href="./index.html">
+            <span class="logo-text-color">Web</span>Studio
+          </a>
+          <address class="addr">
+            <a class="footer-link footer-addr" href="">м. Київ, пр-т Лесі Українки, 26</a>
+            <a class="footer-link footer-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="footer-link footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </address>
+        </div>
+        <div class="soc-cont">
+          <h2 class="join-txt">Приєднуйтесь</h2>
+          <ul class="list footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
