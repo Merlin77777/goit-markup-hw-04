@@ -155,7 +155,8 @@ p {
   padding-top: 200px;
   padding-bottom: 200px;
   background: rgba(47, 48, 58, 0.4);
-  background-image: url(../images/overlay.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/overlay.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -198,7 +199,6 @@ p {
   border: transparent;
   border-radius: 4px;
   background: var(--color-background);
-  /* padding: 25px 100px; */
   margin-bottom: 30px;
 }
 
